@@ -1,0 +1,61 @@
+{
+  "name": "Singularity v1.3 two-pass with Turbo/LMS",
+  "models": [
+    {
+      "category": "diffusion_models",
+      "name": "Minimax-h3_Singularity_ref2va_v1.3_int8.safetensors",
+      "bytes": 34004507622,
+      "sha256": "551915097b8727537a82f3a2c5acec965165ec84e780b3e9a5f28ce867fddf08"
+    },
+    {
+      "category": "text_encoders",
+      "name": "qwen3vl_32b_minimax_h3_int8_convrot.safetensors",
+      "bytes": 27141342152,
+      "sha256": "bc2ced0fbea64757fa9acddccfc0b3f4819d1dcf1da6c124d690d368be283923"
+    },
+    {
+      "category": "vae",
+      "name": "minimax_h3_video_vae_int8_convrot.safetensors",
+      "bytes": 2811065184,
+      "sha256": "52a2c8c73583c86e4f41cdcce3a6ad0ea562987bc0bf3d60a0cef5f5c8e60c0e"
+    },
+    {
+      "category": "vae",
+      "name": "minimax_h3_audio_vae_fp32.safetensors",
+      "bytes": 605254808,
+      "sha256": "8e505d95dd1561d47abd43d4238fd40d9bb1ae9e147ed0a4cba778d76ae4db48"
+    },
+    {
+      "category": "loras",
+      "name": "minimax_h3_ref2v_turbo_4step_v0.1_comfyui_bf16.safetensors",
+      "bytes": 1956193000,
+      "sha256": "5b9ab5ade15d0775676d01a907268a69a1468dc6033b3b0d3ded5502f3ebb84c"
+    },
+    {
+      "category": "loras",
+      "name": "minimax_h3_lms_v1.0_r64.safetensors",
+      "bytes": 1239664536,
+      "sha256": "16f3195bc6bffa431c0598dc2031e520ba058b4fcbc9f104db9e3fdfdeacf60c"
+    },
+    {
+      "category": "latent_upscale_models",
+      "name": "minimax_h3_latent_upscaler_3d_bf16.safetensors",
+      "bytes": 690592992,
+      "sha256": "4f57821f5837f32f7142b67d815606dbd7550f194e5c769f7d6c3f83b146a5e6",
+      "relative_path": "models/latent_upscale_models/minimax_h3_latent_upscaler_3d_bf16.safetensors"
+    },
+    {
+      "category": "diffusion_models",
+      "name": "ref2va_adaln_TABLE_ONLY_NOT_MODEL.safetensors",
+      "bytes": 33048,
+      "sha256": "e6a5dcd21e11a00a50066d718a709589757a8c46c85e682a828b4976f295cd26",
+      "relative_path": "models/diffusion_models/singularity_support/ref2va_adaln_TABLE_ONLY_NOT_MODEL.safetensors"
+    }
+  ],
+  "required_files": [
+    "custom_nodes/ComfyUI-KJNodes/nodes/minimax_nodes.py",
+    "custom_nodes/ComfyUI-H3-AdaLN-LoRA-Fix/__init__.py",
+    "custom_nodes/Comfyui_Minimax_h3_latent_Upscaler/nodes/minimax_h3_latent_upscaler_3d.py"
+  ],
+  "custom_node_revision_status": "Exact installed custom-node revisions were not archived. This is not a clean-machine installation qualification."
+}

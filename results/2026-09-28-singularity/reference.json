@@ -1,0 +1,28 @@
+{
+  "run": "r023_singularity_optimized_reference",
+  "reference_video": "files/sailboat-832x480-56f.mp4",
+  "reference_video_sha256": "192475cd29b1c9bed1db0d19d86d81e73c8c661d4fb2d3dcc20ed41943f24d92",
+  "reference_mapping": "First decoded video frame -> ref_image_0; all 56 video frames -> ref_video_0",
+  "prompt": "subject_definitions:\n<Subject 1> is the red sailboat in <Picture 1>. <Picture 1> defines its appearance. <Video 1> provides gentle boat and camera motion.\nscene_description:\nA calm lake at sunrise, warm natural light and reeds at the edge.\ncamera_and_motion:\nOne continuous medium shot with a slow forward camera movement. The red sailboat gently rocks and ripples move across the water.\ndialogue_and_audio:\nGentle water lapping and a soft breeze. No speech, no music.\nconstraints:\nOne boat only. No cuts, no text, no extra people.",
+  "iterations": [
+    {
+      "run": 0,
+      "conditioning_s": 33.82557627791539,
+      "first_sampling_s": 17.305663093924522,
+      "first_decode_s": 4.348748601973057,
+      "first_save_s": 0.8022077260538936,
+      "upscale_and_zero_step_s": 2.840312563814223,
+      "second_sampling_s": 113.91745086712763,
+      "second_decode_s": 6.630204025190324,
+      "second_save_s": 1.3092601969838142,
+      "total_s_including_evidence": 181.0023877681233,
+      "output_shape": [
+        56,
+        672,
+        1152,
+        3
+      ]
+    }
+  ],
+  "purpose": "One cold functional/parity regression, not a performance comparison"
+}

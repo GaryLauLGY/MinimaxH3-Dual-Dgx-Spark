@@ -19,3 +19,9 @@ The runner uses an existing [ComfyUI](https://github.com/Comfy-Org/ComfyUI) inst
 GaryLauLGY provided the two-Spark environment and project direction. The experiment, adapter changes, benchmark analysis and public packaging were developed with Codex assistance. The sailboat prompt was authored for this test and uses no private reference assets.
 
 Original tested runtime hashes, public runtime hashes and the packaging delta are recorded in [provenance.json](results/2026-09-28/provenance.json) and [AUDIT.md](AUDIT.md). The source upstream checkout is not needed at runtime; the required derived primitives are included with their license.
+
+## Singularity two-pass extension
+
+The same upstream attribution and MIT notice apply to the derived primitives in `runtime/singularity/sp_primitives.py` and `sp_protocol.py`. The effective LoRA-stage cache and process-local prefetch filter are this experiment's additions. Native sampling, dynamic VRAM, quantized weight casting, attention and VAE operations remain supplied by the installed ComfyUI runtime.
+
+The pipeline follows the Singularity v1.3 author two-pass design (Turbo/LMS, AdaLN port and learned latent upscale); we do not claim authorship of the checkpoint, LoRAs or workflow design. It depends on installed ComfyUI-KJNodes, ComfyUI-H3-AdaLN-LoRA-Fix and Comfyui_Minimax_h3_latent_Upscaler components under their own terms. Those third-party sources, weights and the full author UI workflow are not redistributed in this repository. Exact installed custom-node revisions were not archived; see the setup limitation in [SINGULARITY](docs/SINGULARITY.md).

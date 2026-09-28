@@ -4,11 +4,18 @@
 
 两台 NVIDIA DGX Spark，通过 RoCE 直连共同完成一条 H3 视频的推理。基于现有 ComfyUI H3 实现，提供隔离运行器、双机启动脚本、数值验证和可核算的测试记录。
 
-**固定测试中，热运行从 104.09 秒降到 46.41 秒：完整生成 2.24×，20 步采样 2.40×。**
+**两条已测路线：Ref2VA 整片 2.24×；新增 Singularity 双采整片 1.93×、两遍采样 2.10×。**
 
-> 实验版本。已验证的是 **Ref2VA INT8 ConvRot、832×480、56 帧、20 步、无 LoRA、无参考输入**。计时从提示词编码到 MP4 保存，排除初始模型构造与加载；每组四轮，取后三轮中位数。尚未验证 Singularity 作者双采、LoRA、参考视频、ControlNet 或长片。公共启动封装经过 CPU 测试，未在打包后另跑双机 GPU 回归。
+| 路线 | 固定样本 | 原生单机 → 优化双机 | 实测范围 |
+|---|---|---:|---|
+| 原 Ref2VA，无 LoRA | 832×480，56帧，20步 | 104.09 → 46.41 s | 整片 **2.24×** |
+| 新 Singularity，Turbo＋LMS | 768×448→1152×672，56帧，2＋10步 | 132.94 → 68.98 s | 整片 **1.93×**，采样 **2.10×** |
 
-## 实测：1 + 1 > 2 的具体范围
+Singularity 相对原双机的 82.12 秒减少约 **16% 耗时**，整片尚未超过两倍。完整链保留作者双采、LoRA、AdaLN port、潜空间放大及两遍预览。无参考基准32个MP4一致，另通过一张图＋视频参考回归；累计54个MP4技术验收包含重复和消融样本。见 [Singularity 使用说明](docs/SINGULARITY.md) 与 [新实测报告](results/2026-09-28-singularity/RESULTS.md)。
+
+> 实验版本，两条路线分开比较；各组四轮，排除首次，取后三轮中位数。计时排除初始模型构造，完整边界见各报告。当前是隔离命令行后端；未接入生产 ComfyUI 菜单，未验证 2K、长片、全部参考槽位或 ControlNet。公共启动封装经过 CPU 测试，未在打包后另跑双机 GPU 回归。
+
+## 原 Ref2VA 实测：1 + 1 > 2 的具体范围
 
 | 阶段 | 单 Spark | 初版双 Spark | 优化双 Spark | 单机 / 优化双机 |
 |---|---:|---:|---:|---:|
@@ -19,6 +26,20 @@
 同一模型、提示词、seed、步数、精度、采样器、分辨率、音视频输出口径。三组共 12 个 MP4 的 SHA256 完全相同；原记录的 12 次完整解码均通过。并行 VAE 与原生 VAE 的同 latent 像素对照为 `exact=true, max_abs=0`。这些结论只覆盖本次输入，不能视为所有输入均逐位一致的保证。
 
 完整逐轮数据、首次运行数据、计时边界和较慢案例见 [2026-09-28 实测报告](results/2026-09-28/RESULTS.md)。这是推理优化，没有训练或修改模型权重。
+
+## Singularity 快速入口
+
+与原路线共用 `config.local.json`，通过 `--workflow singularity` 选择。以下命令顺序运行，需两台已有匹配环境且没有其他 GPU 工作。模型/第三方节点依赖、原生单机对照和逐元素回归方法见 [SINGULARITY](docs/SINGULARITY.md)。
+
+```bash
+python3 scripts/cluster.py validate --workflow singularity --verify-weights
+python3 scripts/cluster.py run --workflow singularity --run sg_dual01 \
+  --parallel-vae --keep-stage-qkv
+python3 scripts/cluster.py collect --run sg_dual01
+python3 scripts/verify_singularity.py --media
+```
+
+[Singularity 无参考样片](files/singularity-sailboat-1152x672-56f.mp4) · [图＋视频参考样片](files/singularity-reference-1152x672-56f.mp4)
 
 ## 示例输出
 
@@ -86,10 +107,12 @@ Ulysses、通信分块和并行 VAE 的思路已有上游实现。本项目基�
 | 路径 | 内容 |
 |---|---|
 | [`runtime/`](runtime/) | 已测计算代码及公开化后的运行入口 |
+| [`runtime/singularity/`](runtime/singularity/) | 新双采后端、LoRA阶段缓存、模型清单 |
 | [`scripts/`](scripts/) | 配置、预检、启动、收集、结果核算 |
 | [`docs/SETUP.md`](docs/SETUP.md) | 环境、模型、配置、运行与故障定位 |
 | [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) | 数据流、优化来源与限制 |
 | [`results/2026-09-28/`](results/2026-09-28/) | 原数值记录、脱敏配置、哈希、报告 |
+| [`results/2026-09-28-singularity/`](results/2026-09-28-singularity/) | 双采四组对照、54条技术记录、参考回归、源码审计 |
 | [`tests/`](tests/) | 控制端与证据一致性的 CPU 测试 |
 | [`AUDIT.md`](AUDIT.md) | 哪些已验证，哪些尚未验证 |
 

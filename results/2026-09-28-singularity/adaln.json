@@ -1,0 +1,13 @@
+{
+  "mode": "port",
+  "effective_mode": "port",
+  "status": "ok",
+  "keys": 50,
+  "ported": 50,
+  "stripped": 0,
+  "unportable": 0,
+  "residual": 0.0002057608508039266,
+  "source": "ref2va_adaln_TABLE_ONLY_NOT_MODEL.safetensors",
+  "direction": "curve->dense",
+  "notes": []
+}

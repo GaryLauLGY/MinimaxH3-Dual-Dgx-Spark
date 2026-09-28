@@ -53,3 +53,11 @@ rank 0 用 Gloo 发送元信息，用 NCCL 广播音视频 latent、timestep、c
 | DeepSeek / GLM / Qwen 语言模型 | 需要各自推理引擎，不能直接使用此 H3 adapter |
 
 两端权重是复制存储。当前工作不是参数分片、跨机统一寻址、通用 GPU 内存池或原生 ComfyUI 队列集群。更长视频、更大尺寸和更多参考条件会改变算力 / 内存 / 通信比例，必须重新测量。
+
+## Singularity backend
+
+`--workflow singularity` stages only `runtime/singularity/` Python files, keeping its stage-aware primitives separate from the original Ref2VA backend. The native model forward remains authoritative; each LoRA stage dispatches its metadata and tensor inputs to the other rank.
+
+`stage_qkv` obtains effective quantized weights through the native dynamic-VRAM caster, owns the selected head rows/scales/bias, and keys reusable copies by stage, projection, rank, device/dtype and patch signature. Turbo and LMS must not share an effective-weight cache. A matching cache permits skipping only that QKV module in native prefetch; other modules retain native behavior. The single-node cached control was slower, so retained caches are not silently enabled by default.
+
+Both video previews use the existing native temporal VAE plan with alternating chunk ownership and native merge/crop. Audio stays on rank 0. These two passes reuse the existing nodes' sampler and learned upscaler, rather than reducing work or changing precision. [Pipeline, flags and limits](SINGULARITY.md).
