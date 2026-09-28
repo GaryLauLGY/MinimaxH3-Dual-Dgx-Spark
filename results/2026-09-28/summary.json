@@ -1,0 +1,34 @@
+{
+  "statistic": "median of runs 1, 2, 3; run 0 excluded",
+  "timing_scope": "conditioning through MP4 save, excluding initial model construction and load",
+  "medians_seconds": {
+    "single": {
+      "conditioning_s": 1.7601182032376528,
+      "sampling_s": 95.54161622887477,
+      "decode_s": 6.152994974981993,
+      "save_s": 0.538024412933737,
+      "total_s": 104.0866868630983
+    },
+    "dual_initial": {
+      "conditioning_s": 1.8027170598506927,
+      "sampling_s": 40.82135181687772,
+      "decode_s": 6.650406313594431,
+      "save_s": 0.5654953098855913,
+      "total_s": 49.86673404509202
+    },
+    "dual_optimized": {
+      "conditioning_s": 1.7533878730610013,
+      "sampling_s": 39.83700829092413,
+      "decode_s": 4.243675531819463,
+      "save_s": 0.5537279476411641,
+      "total_s": 46.41018546000123
+    }
+  },
+  "speedup_single_over_optimized": {
+    "conditioning_s": 1.0038384719548117,
+    "sampling_s": 2.3983130342305734,
+    "decode_s": 1.449921165943598,
+    "save_s": 0.971640342925939,
+    "total_s": 2.2427552450271016
+  }
+}

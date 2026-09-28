@@ -1,0 +1,27 @@
+{
+  "torch": "2.11.0+cu130",
+  "nccl": [
+    2,
+    28,
+    9
+  ],
+  "results": [
+    {
+      "MB": 1,
+      "seconds": 0.0004257714220633109,
+      "algorithm_GBps": 2.462767451414529
+    },
+    {
+      "MB": 16,
+      "seconds": 0.0008111583301797509,
+      "algorithm_GBps": 20.683034835236427
+    },
+    {
+      "MB": 64,
+      "seconds": 0.003749540230880181,
+      "algorithm_GBps": 17.89789143941166
+    }
+  ],
+  "rank": 0,
+  "note": "MB labels in the original script mean MiB (1024**2 bytes). Algorithm throughput, not wire/bus bandwidth."
+}

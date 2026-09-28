@@ -1,0 +1,36 @@
+{
+  "upstream": "https://github.com/buqi-code/buqi-minimax-h3-multigpu",
+  "upstream_commit": "bce083929c135bdabd41679da3ddf6f409336ed3",
+  "tested_source_sha256": {
+    "lab_runner.py": "0a1a30e3016956c2c4a324272f78d85fbb05d461760561a24321b1fa47e3efd6",
+    "sp_primitives.py": "ccfe3ecf9c972964c41f706ef3ed6ae01d321077c467d271a9efd3f4743b0521",
+    "sp_protocol.py": "97c7747d48cf6a44816458af5650f373122c6f6b11541caa152856eae2f322ad",
+    "parallel_vae.py": "45ce6fcf493d647406dc99e8507cf17d82d49b721e3c91ae6252676b2b298482"
+  },
+  "public_source_sha256": {
+    "lab_runner.py": "695b36771c5b8c2ce0a35fc31dd322bc478ded13b97d6ac4c1bbde229d85cc5b",
+    "sp_primitives.py": "fa83bf37bdf40ab2fe22d5d2848aba10f892417926e98578aa3c68fbaef014fe",
+    "sp_protocol.py": "873dc59b27afd9db4136543056eab3b56d2c3e0fd88d9d5e8a1579c4ec782378",
+    "parallel_vae.py": "45ce6fcf493d647406dc99e8507cf17d82d49b721e3c91ae6252676b2b298482"
+  },
+  "function_ast_comparison": {
+    "lab_runner.py": {
+      "changed": [
+        "generate"
+      ],
+      "unchanged_count": 10
+    },
+    "sp_primitives.py": {
+      "changed": [],
+      "unchanged_count": 14
+    },
+    "sp_protocol.py": {
+      "changed": [],
+      "unchanged_count": 5
+    },
+    "parallel_vae.py": {
+      "changed": [],
+      "unchanged_count": 5
+    }
+  }
+}

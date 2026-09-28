@@ -1,0 +1,14 @@
+name: CPU checks
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Syntax, controller, and published evidence
+        run: |
+          python3 -m compileall -q runtime scripts tests
+          python3 -m unittest discover -s tests -v
+          python3 scripts/verify_results.py

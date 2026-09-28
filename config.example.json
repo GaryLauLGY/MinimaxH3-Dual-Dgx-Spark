@@ -1,0 +1,34 @@
+{
+  "master_addr": "192.0.2.10",
+  "master_port": 29628,
+  "nodes": [
+    {
+      "ssh": "EDIT_spark_head",
+      "expected_hostname": "EDIT_head_hostname",
+      "python": "/home/EDIT_USER/comfy-env/bin/python",
+      "comfy_root": "/home/EDIT_USER/ComfyUI",
+      "scratch": "/home/EDIT_USER/h3-dual-spark-lab",
+      "comfy_ports": [8188],
+      "fabric_env": {
+        "NCCL_IB_HCA": "EDIT_rdma_device_1,EDIT_rdma_device_2",
+        "NCCL_IB_GID_INDEX": "3",
+        "NCCL_SOCKET_IFNAME": "EDIT_fabric_interface",
+        "GLOO_SOCKET_IFNAME": "EDIT_fabric_interface"
+      }
+    },
+    {
+      "ssh": "EDIT_spark_worker",
+      "expected_hostname": "EDIT_worker_hostname",
+      "python": "/home/EDIT_USER/comfy-env/bin/python",
+      "comfy_root": "/home/EDIT_USER/ComfyUI",
+      "scratch": "/home/EDIT_USER/h3-dual-spark-lab",
+      "comfy_ports": [8188],
+      "fabric_env": {
+        "NCCL_IB_HCA": "EDIT_rdma_device_1,EDIT_rdma_device_2",
+        "NCCL_IB_GID_INDEX": "3",
+        "NCCL_SOCKET_IFNAME": "EDIT_fabric_interface",
+        "GLOO_SOCKET_IFNAME": "EDIT_fabric_interface"
+      }
+    }
+  ]
+}
