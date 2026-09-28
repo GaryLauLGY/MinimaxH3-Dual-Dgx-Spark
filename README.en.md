@@ -4,7 +4,16 @@
 
 An experimental, isolated ComfyUI-native H3 inference runner for **two NVIDIA DGX Spark machines connected over RoCE**. Both GPUs cooperate on the same video using sequence/head parallelism and optional native temporal VAE chunk dispatch.
 
-**Measured warm generation: 104.09 s → 46.41 s (2.24×). Sampling: 95.54 s → 39.84 s (2.40×).**
+**Two measured routes: Ref2VA generation 2.24×; new Singularity two-pass generation 1.93× and sampling 2.10×.**
+
+| Workflow | Fixed sample | Native single → optimized dual | Overall speedup |
+|---|---|---:|---:|
+| Original Ref2VA, no LoRA | 832×480, 56 frames, 20 steps | 104.09 → 46.41 s | **2.24×** |
+| New Singularity, Turbo + LMS | 768×448→1152×672, 56 frames, 2+10 steps | 132.94 → 68.98 s | **1.93×** |
+
+The Singularity update saves **16% elapsed time** against its original dual-node backend (82.12 s). Combined sampling is 2.10× faster; overall generation remains below 2×. The original LoRAs, AdaLN port, learned latent upscale and both previews are preserved. [Singularity setup](docs/SINGULARITY.md) · [Measured two-pass results](results/2026-09-28-singularity/RESULTS.md).
+
+## Original Ref2VA results
 
 The result applies to Ref2VA INT8 ConvRot, 832×480, 56 frames at 24 fps, 20 steps, seed 20260928, no LoRA and no reference inputs. Each series contains four runs; medians use runs 1–3. Timing covers prompt conditioning through MP4 save and excludes initial model construction/loading. This is not a cold-start or all-workloads speedup claim.
 
@@ -24,7 +33,7 @@ All 12 recorded MP4 files share one SHA256 and passed full decoding. On the test
 
 - Existing matching ComfyUI environments and local model weights are required; no driver, network, model download or production-service installation is performed.
 - Weights are replicated. This is **not a transparent 256 GB shared GPU memory pool**. The tested RoCE path logged `NET/IB` and `GDR 0` (host staging).
-- This is a standalone CLI backend, not a general ComfyUI custom-node integration. Singularity two-pass workflows, LoRAs, reference inputs, ControlNet, long videos and other H3 checkpoints remain unqualified.
+- This is a standalone CLI backend, not a general ComfyUI custom-node integration. The fixed Singularity pipeline now has two-pass LoRA and image+video reference tests. 2K, long videos, all reference slots, ControlNet and arbitrary checkpoints remain unqualified.
 - GPU measurements come from the original isolated runner. The published controller/path packaging has CPU checks; a fresh two-node GPU regression of that packaging is still pending. Compute provenance is recorded in [AUDIT.md](AUDIT.md).
 
 ## Run
@@ -49,9 +58,25 @@ python3 scripts/cluster.py run --run dual01 --parallel-vae
 python3 scripts/cluster.py collect --run dual01
 ```
 
-The controller checks the configured ComfyUI queues twice before launching, never empties them, and stages four runtime files under a new scratch run directory. It does not reserve GPUs against concurrent submissions or inspect every possible third-party scheduler. Keep the machines idle during the experiment.
+The controller checks the configured ComfyUI queues twice before launching, never empties them, and stages only the selected backend’s runtime files under a new scratch run directory. It does not reserve GPUs against concurrent submissions or inspect every possible third-party scheduler. Keep the machines idle during the experiment.
 
 Default generation settings match the measured case. Dual attention uses all-gather with four gather chunks and four attention chunks; `--parallel-vae` enables temporal decode dispatch. Inspect `runs/<id>/rank*.log`, use `status --run <id>` for the recorded exit codes, and see [SETUP](docs/SETUP.md) for timeouts, collection and direct rank commands.
+
+## Singularity two-pass route
+
+Use the same local cluster config but the [Singularity model/dependency profile](runtime/singularity/profile.json). The existing Ref2VA workflow remains the default. Run sequentially on idle nodes:
+
+```bash
+python3 scripts/cluster.py validate --workflow singularity --verify-weights
+python3 scripts/cluster.py run --workflow singularity --run sg_dual01 \
+  --parallel-vae --keep-stage-qkv
+python3 scripts/cluster.py collect --run sg_dual01
+python3 scripts/verify_singularity.py --media
+```
+
+For matched native single/dual parity, reference inputs and the exact qualification boundary, see [SINGULARITY](docs/SINGULARITY.md). The 32 benchmark MP4s match by stage; the 54 total checks include repeated inputs, tuning and ablations. Image+video reference parity is one cold functional run, not a separate speed benchmark.
+
+[No-reference sample](files/singularity-sailboat-1152x672-56f.mp4) · [Image + video reference sample](files/singularity-reference-1152x672-56f.mp4).
 
 ## Contributions and attribution
 

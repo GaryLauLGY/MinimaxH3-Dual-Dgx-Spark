@@ -1,0 +1,4001 @@
+{
+  "count": 54,
+  "checks": [
+    {
+      "run": "r016_singularity_allgather",
+      "stage": "first",
+      "iteration": 0,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "first_run00.mp4",
+      "mp4_sha256": "1fe34ed303c4955c348cf2b48f0927ef81e03fa7bf12b504ab039c9933fc36ed",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          448,
+          768,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "e2cad6d5bd3ebf667008055b8256db474b626045a0be68cdf8ce843b4842abde"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            28,
+            48
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 768,
+          "height": 448,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r016_singularity_allgather",
+      "stage": "first",
+      "iteration": 1,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "first_run01.mp4",
+      "mp4_sha256": "1fe34ed303c4955c348cf2b48f0927ef81e03fa7bf12b504ab039c9933fc36ed",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          448,
+          768,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "e2cad6d5bd3ebf667008055b8256db474b626045a0be68cdf8ce843b4842abde"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            28,
+            48
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 768,
+          "height": 448,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r016_singularity_allgather",
+      "stage": "second",
+      "iteration": 0,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "second_run00.mp4",
+      "mp4_sha256": "b1774cdca86c8853a97253354cd33d89b5adb686f44f9c64e44057d9bc845b52",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          672,
+          1152,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "66b443ced2546962e027f7a1abdec83900df30c99ad9557f946a8f21f9f76b09"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            42,
+            72
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 1152,
+          "height": 672,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r016_singularity_allgather",
+      "stage": "second",
+      "iteration": 1,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "second_run01.mp4",
+      "mp4_sha256": "b1774cdca86c8853a97253354cd33d89b5adb686f44f9c64e44057d9bc845b52",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          672,
+          1152,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "66b443ced2546962e027f7a1abdec83900df30c99ad9557f946a8f21f9f76b09"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            42,
+            72
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 1152,
+          "height": 672,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r017_singularity_parallel_vae",
+      "stage": "first",
+      "iteration": 0,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "first_run00.mp4",
+      "mp4_sha256": "1fe34ed303c4955c348cf2b48f0927ef81e03fa7bf12b504ab039c9933fc36ed",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          448,
+          768,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "e2cad6d5bd3ebf667008055b8256db474b626045a0be68cdf8ce843b4842abde"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            28,
+            48
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 768,
+          "height": 448,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r017_singularity_parallel_vae",
+      "stage": "first",
+      "iteration": 1,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "first_run01.mp4",
+      "mp4_sha256": "1fe34ed303c4955c348cf2b48f0927ef81e03fa7bf12b504ab039c9933fc36ed",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          448,
+          768,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "e2cad6d5bd3ebf667008055b8256db474b626045a0be68cdf8ce843b4842abde"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            28,
+            48
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 768,
+          "height": 448,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r017_singularity_parallel_vae",
+      "stage": "second",
+      "iteration": 0,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "second_run00.mp4",
+      "mp4_sha256": "b1774cdca86c8853a97253354cd33d89b5adb686f44f9c64e44057d9bc845b52",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          672,
+          1152,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "66b443ced2546962e027f7a1abdec83900df30c99ad9557f946a8f21f9f76b09"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            42,
+            72
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 1152,
+          "height": 672,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r017_singularity_parallel_vae",
+      "stage": "second",
+      "iteration": 1,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "second_run01.mp4",
+      "mp4_sha256": "b1774cdca86c8853a97253354cd33d89b5adb686f44f9c64e44057d9bc845b52",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          672,
+          1152,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "66b443ced2546962e027f7a1abdec83900df30c99ad9557f946a8f21f9f76b09"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            42,
+            72
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 1152,
+          "height": 672,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r018_singularity_tune",
+      "stage": "first",
+      "iteration": 0,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "first_run00.mp4",
+      "mp4_sha256": "1fe34ed303c4955c348cf2b48f0927ef81e03fa7bf12b504ab039c9933fc36ed",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          448,
+          768,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "e2cad6d5bd3ebf667008055b8256db474b626045a0be68cdf8ce843b4842abde"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            28,
+            48
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 768,
+          "height": 448,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r018_singularity_tune",
+      "stage": "second",
+      "iteration": 0,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "second_run00.mp4",
+      "mp4_sha256": "b1774cdca86c8853a97253354cd33d89b5adb686f44f9c64e44057d9bc845b52",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          672,
+          1152,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "66b443ced2546962e027f7a1abdec83900df30c99ad9557f946a8f21f9f76b09"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            42,
+            72
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 1152,
+          "height": 672,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r019_singularity_cached_dual",
+      "stage": "first",
+      "iteration": 0,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "first_run00.mp4",
+      "mp4_sha256": "1fe34ed303c4955c348cf2b48f0927ef81e03fa7bf12b504ab039c9933fc36ed",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          448,
+          768,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "e2cad6d5bd3ebf667008055b8256db474b626045a0be68cdf8ce843b4842abde"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            28,
+            48
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 768,
+          "height": 448,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r019_singularity_cached_dual",
+      "stage": "first",
+      "iteration": 1,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "first_run00.mp4",
+      "mp4_sha256": "1fe34ed303c4955c348cf2b48f0927ef81e03fa7bf12b504ab039c9933fc36ed",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          448,
+          768,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "e2cad6d5bd3ebf667008055b8256db474b626045a0be68cdf8ce843b4842abde"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            28,
+            48
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 768,
+          "height": 448,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r019_singularity_cached_dual",
+      "stage": "first",
+      "iteration": 2,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "first_run00.mp4",
+      "mp4_sha256": "1fe34ed303c4955c348cf2b48f0927ef81e03fa7bf12b504ab039c9933fc36ed",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          448,
+          768,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "e2cad6d5bd3ebf667008055b8256db474b626045a0be68cdf8ce843b4842abde"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            28,
+            48
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 768,
+          "height": 448,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r019_singularity_cached_dual",
+      "stage": "first",
+      "iteration": 3,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "first_run00.mp4",
+      "mp4_sha256": "1fe34ed303c4955c348cf2b48f0927ef81e03fa7bf12b504ab039c9933fc36ed",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          448,
+          768,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "e2cad6d5bd3ebf667008055b8256db474b626045a0be68cdf8ce843b4842abde"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            28,
+            48
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 768,
+          "height": 448,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r019_singularity_cached_dual",
+      "stage": "second",
+      "iteration": 0,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "second_run00.mp4",
+      "mp4_sha256": "b1774cdca86c8853a97253354cd33d89b5adb686f44f9c64e44057d9bc845b52",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          672,
+          1152,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "66b443ced2546962e027f7a1abdec83900df30c99ad9557f946a8f21f9f76b09"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            42,
+            72
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 1152,
+          "height": 672,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r019_singularity_cached_dual",
+      "stage": "second",
+      "iteration": 1,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "second_run00.mp4",
+      "mp4_sha256": "b1774cdca86c8853a97253354cd33d89b5adb686f44f9c64e44057d9bc845b52",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          672,
+          1152,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "66b443ced2546962e027f7a1abdec83900df30c99ad9557f946a8f21f9f76b09"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            42,
+            72
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 1152,
+          "height": 672,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r019_singularity_cached_dual",
+      "stage": "second",
+      "iteration": 2,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "second_run00.mp4",
+      "mp4_sha256": "b1774cdca86c8853a97253354cd33d89b5adb686f44f9c64e44057d9bc845b52",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          672,
+          1152,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "66b443ced2546962e027f7a1abdec83900df30c99ad9557f946a8f21f9f76b09"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            42,
+            72
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 1152,
+          "height": 672,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r019_singularity_cached_dual",
+      "stage": "second",
+      "iteration": 3,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "second_run00.mp4",
+      "mp4_sha256": "b1774cdca86c8853a97253354cd33d89b5adb686f44f9c64e44057d9bc845b52",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          672,
+          1152,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "66b443ced2546962e027f7a1abdec83900df30c99ad9557f946a8f21f9f76b09"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            42,
+            72
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 1152,
+          "height": 672,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r020_singularity_prefetch_dual",
+      "stage": "first",
+      "iteration": 0,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "first_run00.mp4",
+      "mp4_sha256": "1fe34ed303c4955c348cf2b48f0927ef81e03fa7bf12b504ab039c9933fc36ed",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          448,
+          768,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "e2cad6d5bd3ebf667008055b8256db474b626045a0be68cdf8ce843b4842abde"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            28,
+            48
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 768,
+          "height": 448,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r020_singularity_prefetch_dual",
+      "stage": "first",
+      "iteration": 1,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "first_run00.mp4",
+      "mp4_sha256": "1fe34ed303c4955c348cf2b48f0927ef81e03fa7bf12b504ab039c9933fc36ed",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          448,
+          768,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "e2cad6d5bd3ebf667008055b8256db474b626045a0be68cdf8ce843b4842abde"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            28,
+            48
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 768,
+          "height": 448,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r020_singularity_prefetch_dual",
+      "stage": "first",
+      "iteration": 2,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "first_run00.mp4",
+      "mp4_sha256": "1fe34ed303c4955c348cf2b48f0927ef81e03fa7bf12b504ab039c9933fc36ed",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          448,
+          768,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "e2cad6d5bd3ebf667008055b8256db474b626045a0be68cdf8ce843b4842abde"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            28,
+            48
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 768,
+          "height": 448,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r020_singularity_prefetch_dual",
+      "stage": "first",
+      "iteration": 3,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "first_run00.mp4",
+      "mp4_sha256": "1fe34ed303c4955c348cf2b48f0927ef81e03fa7bf12b504ab039c9933fc36ed",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          448,
+          768,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "e2cad6d5bd3ebf667008055b8256db474b626045a0be68cdf8ce843b4842abde"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            28,
+            48
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 768,
+          "height": 448,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r020_singularity_prefetch_dual",
+      "stage": "second",
+      "iteration": 0,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "second_run00.mp4",
+      "mp4_sha256": "b1774cdca86c8853a97253354cd33d89b5adb686f44f9c64e44057d9bc845b52",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          672,
+          1152,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "66b443ced2546962e027f7a1abdec83900df30c99ad9557f946a8f21f9f76b09"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            42,
+            72
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 1152,
+          "height": 672,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r020_singularity_prefetch_dual",
+      "stage": "second",
+      "iteration": 1,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "second_run00.mp4",
+      "mp4_sha256": "b1774cdca86c8853a97253354cd33d89b5adb686f44f9c64e44057d9bc845b52",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          672,
+          1152,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "66b443ced2546962e027f7a1abdec83900df30c99ad9557f946a8f21f9f76b09"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            42,
+            72
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 1152,
+          "height": 672,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r020_singularity_prefetch_dual",
+      "stage": "second",
+      "iteration": 2,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "second_run00.mp4",
+      "mp4_sha256": "b1774cdca86c8853a97253354cd33d89b5adb686f44f9c64e44057d9bc845b52",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          672,
+          1152,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "66b443ced2546962e027f7a1abdec83900df30c99ad9557f946a8f21f9f76b09"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            42,
+            72
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 1152,
+          "height": 672,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r020_singularity_prefetch_dual",
+      "stage": "second",
+      "iteration": 3,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "second_run00.mp4",
+      "mp4_sha256": "b1774cdca86c8853a97253354cd33d89b5adb686f44f9c64e44057d9bc845b52",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          672,
+          1152,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "66b443ced2546962e027f7a1abdec83900df30c99ad9557f946a8f21f9f76b09"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            42,
+            72
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 1152,
+          "height": 672,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r022_singularity_original_dual",
+      "stage": "first",
+      "iteration": 0,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "first_run00.mp4",
+      "mp4_sha256": "1fe34ed303c4955c348cf2b48f0927ef81e03fa7bf12b504ab039c9933fc36ed",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          448,
+          768,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "e2cad6d5bd3ebf667008055b8256db474b626045a0be68cdf8ce843b4842abde"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            28,
+            48
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 768,
+          "height": 448,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r022_singularity_original_dual",
+      "stage": "first",
+      "iteration": 1,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "first_run00.mp4",
+      "mp4_sha256": "1fe34ed303c4955c348cf2b48f0927ef81e03fa7bf12b504ab039c9933fc36ed",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          448,
+          768,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "e2cad6d5bd3ebf667008055b8256db474b626045a0be68cdf8ce843b4842abde"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            28,
+            48
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 768,
+          "height": 448,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r022_singularity_original_dual",
+      "stage": "first",
+      "iteration": 2,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "first_run00.mp4",
+      "mp4_sha256": "1fe34ed303c4955c348cf2b48f0927ef81e03fa7bf12b504ab039c9933fc36ed",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          448,
+          768,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "e2cad6d5bd3ebf667008055b8256db474b626045a0be68cdf8ce843b4842abde"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            28,
+            48
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 768,
+          "height": 448,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r022_singularity_original_dual",
+      "stage": "first",
+      "iteration": 3,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "first_run00.mp4",
+      "mp4_sha256": "1fe34ed303c4955c348cf2b48f0927ef81e03fa7bf12b504ab039c9933fc36ed",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          448,
+          768,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "e2cad6d5bd3ebf667008055b8256db474b626045a0be68cdf8ce843b4842abde"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            28,
+            48
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 768,
+          "height": 448,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r022_singularity_original_dual",
+      "stage": "second",
+      "iteration": 0,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "second_run00.mp4",
+      "mp4_sha256": "b1774cdca86c8853a97253354cd33d89b5adb686f44f9c64e44057d9bc845b52",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          672,
+          1152,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "66b443ced2546962e027f7a1abdec83900df30c99ad9557f946a8f21f9f76b09"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            42,
+            72
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 1152,
+          "height": 672,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r022_singularity_original_dual",
+      "stage": "second",
+      "iteration": 1,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "second_run00.mp4",
+      "mp4_sha256": "b1774cdca86c8853a97253354cd33d89b5adb686f44f9c64e44057d9bc845b52",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          672,
+          1152,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "66b443ced2546962e027f7a1abdec83900df30c99ad9557f946a8f21f9f76b09"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            42,
+            72
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 1152,
+          "height": 672,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r022_singularity_original_dual",
+      "stage": "second",
+      "iteration": 2,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "second_run00.mp4",
+      "mp4_sha256": "b1774cdca86c8853a97253354cd33d89b5adb686f44f9c64e44057d9bc845b52",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          672,
+          1152,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "66b443ced2546962e027f7a1abdec83900df30c99ad9557f946a8f21f9f76b09"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            42,
+            72
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 1152,
+          "height": 672,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r022_singularity_original_dual",
+      "stage": "second",
+      "iteration": 3,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "second_run00.mp4",
+      "mp4_sha256": "b1774cdca86c8853a97253354cd33d89b5adb686f44f9c64e44057d9bc845b52",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          672,
+          1152,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "66b443ced2546962e027f7a1abdec83900df30c99ad9557f946a8f21f9f76b09"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            42,
+            72
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 1152,
+          "height": 672,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r023_singularity_optimized_reference",
+      "stage": "first",
+      "iteration": 0,
+      "baseline_run": "r013_singularity_reference_dual",
+      "baseline_file": "first_run00.mp4",
+      "mp4_sha256": "d492bfaa770d9a9658705b5bd38b02d74f33e5c7c2312853a819c52d33a716fe",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          448,
+          768,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "68ab07044f6ffedae892ce014dc32356099c95f707d20ecd05438f399e2d88b1"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            28,
+            48
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 768,
+          "height": 448,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r023_singularity_optimized_reference",
+      "stage": "second",
+      "iteration": 0,
+      "baseline_run": "r013_singularity_reference_dual",
+      "baseline_file": "second_run00.mp4",
+      "mp4_sha256": "5f671e64e461356f76ad35404e5815c5908cc9117184250c365e931e713c184f",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          672,
+          1152,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "7a57bb0112dd32d1bf0500f1cb04249dc5b8ab32c0f80fa83e0b0169fd682bb9"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            42,
+            72
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 1152,
+          "height": 672,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r024_singularity_cached_single",
+      "stage": "first",
+      "iteration": 0,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "first_run00.mp4",
+      "mp4_sha256": "1fe34ed303c4955c348cf2b48f0927ef81e03fa7bf12b504ab039c9933fc36ed",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          448,
+          768,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "e2cad6d5bd3ebf667008055b8256db474b626045a0be68cdf8ce843b4842abde"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            28,
+            48
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 768,
+          "height": 448,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r024_singularity_cached_single",
+      "stage": "first",
+      "iteration": 1,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "first_run00.mp4",
+      "mp4_sha256": "1fe34ed303c4955c348cf2b48f0927ef81e03fa7bf12b504ab039c9933fc36ed",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          448,
+          768,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "e2cad6d5bd3ebf667008055b8256db474b626045a0be68cdf8ce843b4842abde"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            28,
+            48
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 768,
+          "height": 448,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r024_singularity_cached_single",
+      "stage": "first",
+      "iteration": 2,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "first_run00.mp4",
+      "mp4_sha256": "1fe34ed303c4955c348cf2b48f0927ef81e03fa7bf12b504ab039c9933fc36ed",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          448,
+          768,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "e2cad6d5bd3ebf667008055b8256db474b626045a0be68cdf8ce843b4842abde"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            28,
+            48
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 768,
+          "height": 448,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r024_singularity_cached_single",
+      "stage": "first",
+      "iteration": 3,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "first_run00.mp4",
+      "mp4_sha256": "1fe34ed303c4955c348cf2b48f0927ef81e03fa7bf12b504ab039c9933fc36ed",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          448,
+          768,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "e2cad6d5bd3ebf667008055b8256db474b626045a0be68cdf8ce843b4842abde"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            28,
+            48
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 768,
+          "height": 448,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r024_singularity_cached_single",
+      "stage": "second",
+      "iteration": 0,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "second_run00.mp4",
+      "mp4_sha256": "b1774cdca86c8853a97253354cd33d89b5adb686f44f9c64e44057d9bc845b52",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          672,
+          1152,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "66b443ced2546962e027f7a1abdec83900df30c99ad9557f946a8f21f9f76b09"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            42,
+            72
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 1152,
+          "height": 672,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r024_singularity_cached_single",
+      "stage": "second",
+      "iteration": 1,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "second_run00.mp4",
+      "mp4_sha256": "b1774cdca86c8853a97253354cd33d89b5adb686f44f9c64e44057d9bc845b52",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          672,
+          1152,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "66b443ced2546962e027f7a1abdec83900df30c99ad9557f946a8f21f9f76b09"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            42,
+            72
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 1152,
+          "height": 672,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r024_singularity_cached_single",
+      "stage": "second",
+      "iteration": 2,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "second_run00.mp4",
+      "mp4_sha256": "b1774cdca86c8853a97253354cd33d89b5adb686f44f9c64e44057d9bc845b52",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          672,
+          1152,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "66b443ced2546962e027f7a1abdec83900df30c99ad9557f946a8f21f9f76b09"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            42,
+            72
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 1152,
+          "height": 672,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r024_singularity_cached_single",
+      "stage": "second",
+      "iteration": 3,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "second_run00.mp4",
+      "mp4_sha256": "b1774cdca86c8853a97253354cd33d89b5adb686f44f9c64e44057d9bc845b52",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          672,
+          1152,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "66b443ced2546962e027f7a1abdec83900df30c99ad9557f946a8f21f9f76b09"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            42,
+            72
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 1152,
+          "height": 672,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r025_singularity_native_single",
+      "stage": "first",
+      "iteration": 0,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "first_run00.mp4",
+      "mp4_sha256": "1fe34ed303c4955c348cf2b48f0927ef81e03fa7bf12b504ab039c9933fc36ed",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          448,
+          768,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "e2cad6d5bd3ebf667008055b8256db474b626045a0be68cdf8ce843b4842abde"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            28,
+            48
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 768,
+          "height": 448,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r025_singularity_native_single",
+      "stage": "first",
+      "iteration": 1,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "first_run00.mp4",
+      "mp4_sha256": "1fe34ed303c4955c348cf2b48f0927ef81e03fa7bf12b504ab039c9933fc36ed",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          448,
+          768,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "e2cad6d5bd3ebf667008055b8256db474b626045a0be68cdf8ce843b4842abde"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            28,
+            48
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 768,
+          "height": 448,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r025_singularity_native_single",
+      "stage": "first",
+      "iteration": 2,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "first_run00.mp4",
+      "mp4_sha256": "1fe34ed303c4955c348cf2b48f0927ef81e03fa7bf12b504ab039c9933fc36ed",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          448,
+          768,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "e2cad6d5bd3ebf667008055b8256db474b626045a0be68cdf8ce843b4842abde"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            28,
+            48
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 768,
+          "height": 448,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r025_singularity_native_single",
+      "stage": "first",
+      "iteration": 3,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "first_run00.mp4",
+      "mp4_sha256": "1fe34ed303c4955c348cf2b48f0927ef81e03fa7bf12b504ab039c9933fc36ed",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          448,
+          768,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "e2cad6d5bd3ebf667008055b8256db474b626045a0be68cdf8ce843b4842abde"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            28,
+            48
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 768,
+          "height": 448,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r025_singularity_native_single",
+      "stage": "second",
+      "iteration": 0,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "second_run00.mp4",
+      "mp4_sha256": "b1774cdca86c8853a97253354cd33d89b5adb686f44f9c64e44057d9bc845b52",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          672,
+          1152,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "66b443ced2546962e027f7a1abdec83900df30c99ad9557f946a8f21f9f76b09"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            42,
+            72
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 1152,
+          "height": 672,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r025_singularity_native_single",
+      "stage": "second",
+      "iteration": 1,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "second_run00.mp4",
+      "mp4_sha256": "b1774cdca86c8853a97253354cd33d89b5adb686f44f9c64e44057d9bc845b52",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          672,
+          1152,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "66b443ced2546962e027f7a1abdec83900df30c99ad9557f946a8f21f9f76b09"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            42,
+            72
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 1152,
+          "height": 672,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r025_singularity_native_single",
+      "stage": "second",
+      "iteration": 2,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "second_run00.mp4",
+      "mp4_sha256": "b1774cdca86c8853a97253354cd33d89b5adb686f44f9c64e44057d9bc845b52",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          672,
+          1152,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "66b443ced2546962e027f7a1abdec83900df30c99ad9557f946a8f21f9f76b09"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            42,
+            72
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 1152,
+          "height": 672,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r025_singularity_native_single",
+      "stage": "second",
+      "iteration": 3,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "second_run00.mp4",
+      "mp4_sha256": "b1774cdca86c8853a97253354cd33d89b5adb686f44f9c64e44057d9bc845b52",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          672,
+          1152,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "66b443ced2546962e027f7a1abdec83900df30c99ad9557f946a8f21f9f76b09"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            42,
+            72
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 1152,
+          "height": 672,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r026_singularity_wide_tune",
+      "stage": "first",
+      "iteration": 0,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "first_run00.mp4",
+      "mp4_sha256": "1fe34ed303c4955c348cf2b48f0927ef81e03fa7bf12b504ab039c9933fc36ed",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          448,
+          768,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "e2cad6d5bd3ebf667008055b8256db474b626045a0be68cdf8ce843b4842abde"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            28,
+            48
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 768,
+          "height": 448,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "run": "r026_singularity_wide_tune",
+      "stage": "second",
+      "iteration": 0,
+      "baseline_run": "r011_singularity_single",
+      "baseline_file": "second_run00.mp4",
+      "mp4_sha256": "b1774cdca86c8853a97253354cd33d89b5adb686f44f9c64e44057d9bc845b52",
+      "float_pixels_exact": true,
+      "latent_exact": true,
+      "full_decode_exit": 0,
+      "pixels": {
+        "shape": [
+          56,
+          672,
+          1152,
+          3
+        ],
+        "finite": true,
+        "sha256_float_pixels": "66b443ced2546962e027f7a1abdec83900df30c99ad9557f946a8f21f9f76b09"
+      },
+      "latents": {
+        "shapes": [
+          [
+            1,
+            24,
+            17,
+            42,
+            72
+          ],
+          [
+            1,
+            32,
+            2,
+            93
+          ]
+        ],
+        "finite": [
+          true,
+          true
+        ],
+        "comparison": [
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          },
+          {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_l2": 0.0
+          }
+        ]
+      },
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 1152,
+          "height": 672,
+          "nb_frames": "56",
+          "avg_frame_rate": "24/1",
+          "duration": "2.333333"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "nb_frames": "74",
+          "avg_frame_rate": "0/0",
+          "duration": "2.325000",
+          "sample_rate": "32000",
+          "channels": 2
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "source": "Final isolated optimization source; benchmark snapshots retained separately",
+  "source_sha256": {
+    "singularity_runner.py": "5dacaa3d7ca6833e9f40f4093c6478004a90826fdbbe18d0c79d40d57c2a8dd7",
+    "sp_primitives.py": "b90cdd3d2308a08f8a6f09989871dc21f0e5e2f6cd660ef702c5676763906117",
+    "sp_protocol.py": "97c7747d48cf6a44816458af5650f373122c6f6b11541caa152856eae2f322ad",
+    "stage_qkv.py": "950fc758320e2313899be92b63696da578067e563ed1c96eb15ead457b3af03e",
+    "parallel_vae.py": "793dc19d6bfda5d70b7c1591ac1b5341f184fa47600fa2edccf089238a7c6f6e"
+  },
+  "public_source_sha256": {
+    "singularity_runner.py": "11d78e86f9b58f46176e86d8acfda1601eb946e399607f87de4687cd8bbbe716",
+    "sp_primitives.py": "3b96a2d1ba5777b84a3cddb0aa143e952bb5a2bf49f6fa7f16841753aeedc327",
+    "sp_protocol.py": "dea19427a0aea862668ddeb2ad8c6b78c05198cfee5aa8e1351b9fe5ef6e7af1",
+    "stage_qkv.py": "950fc758320e2313899be92b63696da578067e563ed1c96eb15ead457b3af03e",
+    "parallel_vae.py": "793dc19d6bfda5d70b7c1591ac1b5341f184fa47600fa2edccf089238a7c6f6e"
+  },
+  "top_level_function_class_ast_changes": {
+    "singularity_runner.py": [
+      "generate"
+    ],
+    "sp_primitives.py": [],
+    "sp_protocol.py": [],
+    "stage_qkv.py": [],
+    "parallel_vae.py": []
+  },
+  "fresh_packaged_gpu_regression": false,
+  "notes": [
+    "sp_primitives and sp_protocol: corrected module documentation; unused version constant updated.",
+    "runner: loopback master default, pre-import argument validation, optional prompt override; fixed default pipeline unchanged.",
+    "stage_qkv and parallel_vae: byte-identical to tested final source.",
+    "r020 runner predates the single-rank forwarding fix and optional tuner controls; compute modules match r020."
+  ]
+}
