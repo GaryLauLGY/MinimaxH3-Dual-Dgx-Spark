@@ -1,0 +1,35 @@
+{
+  "metric": "head child start-to-exit seconds including eight hashes; excludes parent queue and submission",
+  "short_order": [
+    "A1",
+    "B1",
+    "B2",
+    "A2",
+    "A3",
+    "B3"
+  ],
+  "short_pairs": [
+    {
+      "a_s": 989.0848562228493,
+      "b_s": 877.6314784060232
+    },
+    {
+      "a_s": 988.4579010172747,
+      "b_s": 882.1580439871177
+    },
+    {
+      "a_s": 982.0204537860118,
+      "b_s": 886.8949568127282
+    }
+  ],
+  "long_pairs": [
+    {
+      "a_s": 4701.332133596297,
+      "b_s": 4388.425324935932
+    }
+  ],
+  "all_exact": true,
+  "raw_audio": false,
+  "long_repetitions_complete": false,
+  "release_acceptance": "Measured benefit accepted; no universal 10 percent guarantee"
+}

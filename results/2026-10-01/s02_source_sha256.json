@@ -1,0 +1,14 @@
+{
+  "runtime/s02/author_backend/author_runner.py": "135c14021874ee8d8aec6dabe12d9bc91b66d221d30ccd6b786d0f42f610ed8e",
+  "runtime/s02/author_backend/fixed_cublas_selftest.py": "8d9a094fe9ec070fe8029f3fcc29bdefac4795b3c32b7718deefd8cf447f3b06",
+  "runtime/s02/author_backend/fixed_cublas.py": "38d36996534d2ce37619816b994f2b179a5a8e42a64cd8e776585894e6752f3f",
+  "runtime/s02/author_backend/progress_relay.py": "cf088b3044058fd5b1d4079872699b4e8c2f97b774544fa77acac12beb9270e1",
+  "runtime/s02/legacy_backend/singularity_runner.py": "9b404284eb4112f6e0399a1c1cfa598f49b84d23a76c0ec438a95302cd3fba82",
+  "runtime/s02/legacy_backend/sp_protocol.py": "dea19427a0aea862668ddeb2ad8c6b78c05198cfee5aa8e1351b9fe5ef6e7af1",
+  "runtime/s02/legacy_backend/stage_qkv.py": "950fc758320e2313899be92b63696da578067e563ed1c96eb15ead457b3af03e",
+  "runtime/s02/legacy_backend/parallel_vae.py": "793dc19d6bfda5d70b7c1591ac1b5341f184fa47600fa2edccf089238a7c6f6e",
+  "runtime/s02/legacy_backend/sp_primitives.py": "3b96a2d1ba5777b84a3cddb0aa143e952bb5a2bf49f6fa7f16841753aeedc327",
+  "runtime/s02/plugin/control.py": "28009551804d960676c826e5c73074a926269a60316167d759ec6d429cec7740",
+  "runtime/s02/plugin/__init__.py": "d5ac8a14e15fce7e1636c80766f72b4ee264cf81a8d2c6e0b48dc0d76d2b1c72",
+  "runtime/s02/plugin/graph_plan.py": "a7b28ef25cb0055147714bfd571c79fd5272fea24eb1ae55063bdecefd5f89b4"
+}

@@ -19,3 +19,7 @@ The runner uses an existing [ComfyUI](https://github.com/Comfy-Org/ComfyUI) inst
 GaryLauLGY provided the two-Spark environment and project direction. The experiment, adapter changes, benchmark analysis and public packaging were developed with Codex assistance. The sailboat prompt was authored for this test and uses no private reference assets.
 
 Original tested runtime hashes, public runtime hashes and the packaging delta are recorded in [provenance.json](results/2026-09-28/provenance.json) and [AUDIT.md](AUDIT.md). The source upstream checkout is not needed at runtime; the required derived primitives are included with their license.
+
+## S02 author-graph adapter
+
+The attribution and MIT notice above also cover the derived primitives and metadata protocol in `runtime/s02/legacy_backend/`. The author-graph adapter preserves the installed Singularity workflow design and native ComfyUI operations. The fixed INT8 module selects the installed Comfy Kitchen CUDA backend's existing cuBLAS fallback; it does not redistribute CUDA or Comfy Kitchen. Singularity models, Turbo/LMS LoRAs, custom-node dependencies, author UI graphs and private test assets are not bundled.

@@ -1,5 +1,7 @@
 # MiniMax H3 · Dual DGX Spark
 
+**2026-10-01 S02 update:** the separately namespaced [author-graph adapter](docs/S02_AUTHOR.md) includes an optional INT8 LMS route. Whole-child time fell by a median **10.75%** across three short pairs and **6.66%** in the first long pair, with exact tensor and decoded-video comparisons. See [scope and limits](docs/S02_FIXED_INT8_RESULTS.md). The older warm-run results below describe the original CLI runner, not this author-graph path.
+
 [中文](README.md) · [Setup](docs/SETUP.md) · [Measured results](results/2026-09-28/RESULTS.md) · [Credits](CREDITS.md)
 
 An experimental, isolated ComfyUI-native H3 inference runner for **two NVIDIA DGX Spark machines connected over RoCE**. Both GPUs cooperate on the same video using sequence/head parallelism and optional native temporal VAE chunk dispatch.
