@@ -1,0 +1,30 @@
+{
+  "scope": "real ComfyUI S02 API; not performance evidence",
+  "completed_dual_rank": true,
+  "native_steps": {
+    "turbo": 2,
+    "lms": 10
+  },
+  "per_rank_lms_blocks": 500,
+  "per_rank_candidate_calls": 4500,
+  "eight_tensor_hashes_exact": true,
+  "full_decode_passed": true,
+  "video_pixels_exact": true,
+  "audio_samples_exact": true,
+  "frames": 56,
+  "fps": 24,
+  "first_size": [
+    768,
+    448
+  ],
+  "second_size": [
+    1152,
+    672
+  ],
+  "head_child_s": 212.36139856977388,
+  "worker_child_s": 206.14000666886568,
+  "actual_owned_parent_cancel_cleaned_both_children": true,
+  "service_restarted": false,
+  "timeout_s": 0,
+  "comparison_method": "Verify saved original media file SHA; decode original and candidate with the same ffmpeg commands on the same host; exact video/audio hashes. Earlier stored audio hashes used a nonmatching comparison environment/format and are not substituted as comparable."
+}
